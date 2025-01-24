@@ -87,7 +87,7 @@ export default function HomePage() {
 
         {/* Image Section */}
       <div className="rounded-[200px] overflow-hidden shadow-lg w-72 h-96 lg:w-80 lg:h-96">
-        <img src="/images/couple123.jpg" alt="Benz and M" className="w-full h-full object-cover" />
+        <img src="/images/couple123.jpg" alt="benz and M" className="w-full h-full object-cover" />
       </div>
       </section>
       <section className="text-center py-10 mt-16">
@@ -115,7 +115,7 @@ export default function HomePage() {
 
         {/* Image Section - Center */}
         <div className="rounded-full overflow-hidden shadow-lg w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] mx-10 lg:mx-0 flex-shrink-0 lg:mx-20">
-          <img src="/images/sample-couple.jpg" alt="Benz and M" className="w-full h-full object-cover" />
+          <img src="/images/sample-couple.jpg" alt="benz and M" className="w-full h-full object-cover" />
         </div>
 
         {/* Text Section - Right */}
@@ -127,7 +127,7 @@ export default function HomePage() {
 
         {/* Image Section - Center */}
         <div className="rounded-full overflow-hidden shadow-lg w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] mx-10 lg:mx-0 flex-shrink-0 lg:mx-20">
-          <img src="/images/sample-couple2.jpg" alt="Benz and M" className="w-full h-full object-cover" />
+          <img src="/images/sample-couple2.jpg" alt="benz and M" className="w-full h-full object-cover" />
         </div>
          </div>
       </section>
