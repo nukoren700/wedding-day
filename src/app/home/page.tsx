@@ -43,6 +43,48 @@ export default function HomePage() {
       setShowQRCodePopup(!showQRCodePopup);
     };
 
+    const [formData, setFormData] = useState({
+      firstName: '',
+      lastName: '',
+      message: '',
+    });
+  
+    const [statusMessage, setStatusMessage] = useState('');
+  
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const { id, value } = e.target;
+      setFormData((prev) => ({ ...prev, [id]: value }));
+    };
+  
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+  
+      try {
+        const response = await fetch('http://localhost:3001/api/save-data', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            firstname: formData.firstName,
+            lastname: formData.lastName,
+            message: formData.message,
+          }),
+        });
+  
+        const result = await response.json();
+  
+        if (response.ok) {
+          setStatusMessage('Data submitted successfully!');
+          setFormData({ firstName: '', lastName: '', message: '' }); // Reset form
+        } else {
+          setStatusMessage(result.error || 'Failed to submit data.');
+        }
+      } catch (error) {
+        console.error('Error submitting form:', error);
+        setStatusMessage('An unexpected error occurred. Please try again later.');
+      }
+    };
     
     return (
       <div>
@@ -69,13 +111,13 @@ export default function HomePage() {
             <img src="/images/banner1.jpg" alt="Banner 1" />
           </picture>
           <picture>
-            <source media="(max-width: 768px)" srcSet="/images/banner2-mobile.jpg" />
-            <source media="(min-width: 769px)" srcSet="/images/banner2.jpg" />
+            <source media="(max-width: 768px)" srcSet="/images/banner2-mobile.png" />
+            <source media="(min-width: 769px)" srcSet="/images/banner2.png" />
             <img src="/images/banner2.jpg" alt="Banner 2" />
           </picture>
           <picture>
-            <source media="(max-width: 768px)" srcSet="/images/banner3-mobile.jpg" />
-            <source media="(min-width: 769px)" srcSet="/images/banner3.jpg" />
+            <source media="(max-width: 768px)" srcSet="/images/banner3-mobile.png" />
+            <source media="(min-width: 769px)" srcSet="/images/banner3.png" />
             <img src="/images/banner3.jpg" alt="Banner 3" />
           </picture>
         </Carousel>
@@ -218,7 +260,7 @@ export default function HomePage() {
             </button>
             <h2 className="text-lg lg:text-xl text-yellow-700 font-bold text-center mb-4">แสดงคำอวยพรให้คู่บ่าวสาว</h2>
             {/* <img src="/images/qrcode-sample.png" alt="Gift QR Code" className="w-64 h-64 object-contain mx-auto"/> */}
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6 text-yellow-700">
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6 text-yellow-700">
           {/* First Name */}
           <div className="md:col-span-1">
             <label htmlFor="firstName" className="block text-lg mb-2">
@@ -228,6 +270,9 @@ export default function HomePage() {
               type="text"
               id="firstName"
               placeholder="Enter your first name"
+              value={formData.firstName}
+              onChange={handleChange}
+              required
               className="w-full p-3 border border-pink rounded-md bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-700 text-black"
             />
           </div>
@@ -241,6 +286,9 @@ export default function HomePage() {
               type="text"
               id="lastName"
               placeholder="Enter your last name"
+              value={formData.lastName}
+              onChange={handleChange}
+              required
               className="w-full p-3 border border-pink rounded-md bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-700 text-black"
             />
           </div>
@@ -253,6 +301,8 @@ export default function HomePage() {
           <textarea
             id="message"
             placeholder="Enter your message"
+            value={formData.message}
+            onChange={handleChange}
             required
             rows={8} // Use curly braces to pass a number, not a string
             className="w-full p-3 border border-pink rounded-md bg-transparent focus:outline-none focus:ring-2 focus:ring-yellow-700 text-black"
@@ -268,6 +318,12 @@ export default function HomePage() {
               Submit
             </button>
           </div>
+          {/* Status Message */}
+      {statusMessage && (
+        <div className="md:col-span-2 text-center mt-4 text-red-700 font-bold">
+          {statusMessage}
+        </div>
+              )}
           </form>
           </div>
         </div>
