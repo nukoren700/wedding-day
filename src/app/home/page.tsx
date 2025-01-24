@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import React, { useState, useEffect } from "react";
 
+
 export default function HomePage() {
 
   const [timeLeft, setTimeLeft, ] = useState({
@@ -41,6 +42,8 @@ export default function HomePage() {
     const togglePopup = () => {
       setShowQRCodePopup(!showQRCodePopup);
     };
+
+    
     return (
       <div>
         <audio autoPlay loop controls className="w-full">
@@ -178,7 +181,7 @@ export default function HomePage() {
       </div>
     </section>
     <section className="mt-10 px-4 text-center">
-          <h2 className="text-4xl lg:text-6xl font-semibold text-rose-400 font-darleston mb-4 pt-10 pb-10">WEDDING GIFT</h2>
+          <h2 className="text-3xl lg:text-4xl font-semibold text-rose-400 font-darleston mb-4 pt-10 pb-10">WEDDING GIFT</h2>
           <div className="relative max-w-sm mx-auto rounded-lg shadow-lg overflow-hidden mb-6 pt-10">
           <video src="/videos/IMG_2199.mov" className="w-full h-auto object-cover"
             autoPlay
