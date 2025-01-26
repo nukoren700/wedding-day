@@ -19,7 +19,7 @@ export default function PC9nCVgN4KMl4DIPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:3001/api/message"); // ใส่ URL ของ API ที่คุณต้องการ
+        const response = await fetch("https://wedding-day-seven.vercel.app/api/message"); // ใส่ URL ของ API ที่คุณต้องการ
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
