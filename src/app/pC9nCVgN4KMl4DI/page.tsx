@@ -53,14 +53,19 @@ export default function PC9nCVgN4KMl4DIPage() {
         <h1 className="text-4xl font-bold font-darleston">คำอวยพร</h1>
       </section>
 
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto p-4"
+            style={{
+              backgroundImage: "url('/path-to-your-image.jpg')", // พื้นหลัง
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}>
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>
             <tr className="bg-yellow-700 text-center">
               <th className="px-6 py-3 border border-gray-200 text-white">First Name</th>
               <th className="px-6 py-3 border border-gray-200 text-white">Last Name</th>
               {/* <th className="px-6 py-3 border border-gray-200 text-white">Message</th> */}
-              <th className="px-6 py-3 border border-gray-200 text-white">บันทึกเมื่อ</th>
+              {/* <th className="px-6 py-3 border border-gray-200 text-white">บันทึกเมื่อ</th> */}
               <th className="px-6 py-3 border border-gray-200 text-white">Action</th>
             </tr>
           </thead>
@@ -76,14 +81,14 @@ export default function PC9nCVgN4KMl4DIPage() {
                 {/* <td className="px-6 py-4 border border-gray-200 text-center">
                   <div className="break-message">{record.message}</div>
                 </td> */}
-                <td className="text-lg font-bold py-4 px-3 border-gray-200">
+                {/* <td className="text-lg font-bold py-4 px-3 border-gray-200">
                   {new Date(record.created_at).toLocaleString()}
-                </td>
+                </td> */}
                 <td className="px-6 py-4 border border-gray-200 text-center">
                   <button 
-                  className="bg-pink text-white text-lg font-bold py-4 px-12 rounded-full shadow-lg hover:bg-white hover:text-pink focus:ring-2 focus:ring-green-500 focus:outline-none transform transition duration-300 hover:scale-105"
+                  className="bg-pink text-white px-6 py-3 rounded-lg text-lg hover:bg-red-600"
                   onClick={() => setSelectedRecord(record)}>
-                    View
+                    ดู
                   </button>
                 </td>
               </tr>
@@ -126,7 +131,7 @@ export default function PC9nCVgN4KMl4DIPage() {
         >
           {/* เพิ่ม overlay ให้ข้อความอ่านง่าย */}
           <div className="bg-white bg-opacity-90 rounded-lg p-6">
-            <h2 className="text-2xl font-bold mb-6">Details</h2>
+            <h2 className="text-2xl font-bold mb-6">คำอวยพร</h2>
             <p className="text-lg"><strong>First Name:</strong> {selectedRecord.firstname}</p>
             <p className="text-lg"><strong>Last Name:</strong> {selectedRecord.lastname}</p>
             <div className="overflow-y-auto max-h-60 border-t border-b my-6 py-4">
