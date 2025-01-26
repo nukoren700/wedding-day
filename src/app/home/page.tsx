@@ -75,14 +75,17 @@ export default function HomePage() {
         const result = await response.json();
   
         if (response.ok) {
-          setStatusMessage('Data submitted successfully!');
-          setFormData({ firstName: '', lastName: '', message: '' }); // Reset form
+          // setStatusMessage('Data submitted successfully!');
+          alert('ขอบคุณสำหรับคำอวยพรดีๆ ขอให้ท่ายมีความสุขดั่งคำอวยพร');
+          togglePopup();
+          // setFormData({ firstName: '', lastName: '', message: '' }); // Reset form
         } else {
           setStatusMessage(result.error || 'Failed to submit data.');
         }
       } catch (error) {
         console.error('Error submitting form:', error);
-        setStatusMessage('An unexpected error occurred. Please try again later.');
+        // setStatusMessage('An unexpected error occurred. Please try again later.');
+        alert('บันทึกข้อมูลไม่สำเร็จ กรุณาลองใหม่');
       }
     };
     
