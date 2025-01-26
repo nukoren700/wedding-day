@@ -60,7 +60,7 @@ export default function HomePage() {
       e.preventDefault();
   
       try {
-        const response = await fetch('http://wedding-day-seven.vercel.app/api/save-data', {
+        const response = await fetch('https://wedding-day-seven.vercel.app/api/save-data', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
