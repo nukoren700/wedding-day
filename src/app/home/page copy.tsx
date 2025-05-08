@@ -108,11 +108,11 @@ export default function HomePage() {
             showThumbs={false} // ซ่อนแถบ Thumbnail
             showStatus={false} // ซ่อนสถานะ (เช่น "1/3")
             >
-          {/* <picture> */}
+          <picture>
             {/* <source media="(max-width: 768px)" srcSet="/images/banner1-mobile.jpg" /> */}
             {/* <source media="(min-width: 769px)" srcSet="/images/banner1.png" /> */}
             {/* <img src="/images/banner1.jpg" alt="Banner 1" /> */}
-          {/* </picture> */}
+          </picture>
           <picture>
             <source media="(max-width: 768px)" srcSet="/images/banner2-mobile.png" />
             <source media="(min-width: 769px)" srcSet="/images/banner2.png" />
