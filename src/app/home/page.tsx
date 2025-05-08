@@ -135,7 +135,7 @@ export default function HomePage() {
 
         {/* Image Section */}
       <div className="rounded-[200px] overflow-hidden shadow-lg w-72 h-96 lg:w-80 lg:h-96">
-        <img src="/images/IMG_3553 copy.JPG" alt="benz and M" className="w-full h-full object-cover" />
+        <img src="/images/IMG_3553 copy.jpg" alt="benz and M" className="w-full h-full object-cover" />
       </div>
       </section>
       <section className="text-center py-10 mt-16">
@@ -203,35 +203,35 @@ export default function HomePage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* Image 1 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972102_0.JPG" alt="Image 1" className="w-full h-full object-cover" />
+        <img src="/images/S__19972102_0.jpg" alt="Image 1" className="w-full h-full object-cover" />
       </div>
       {/* Image 2 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972104_0.JPG" alt="Image 2" className="w-full h-full object-cover" />
+        <img src="/images/S__19972104_0.jpg" alt="Image 2" className="w-full h-full object-cover" />
       </div>
       {/* Image 3 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972105_0.JPG" alt="Image 3" className="w-full h-full object-cover" />
+        <img src="/images/S__19972105_0.jpg" alt="Image 3" className="w-full h-full object-cover" />
       </div>
       {/* Image 4 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972106_0.JPG" alt="Image 4" className="w-full h-full object-cover" />
+        <img src="/images/S__19972106_0.jpg" alt="Image 4" className="w-full h-full object-cover" />
       </div>
             {/* Image 5 */}
             <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972107_0.JPG" alt="Image 1" className="w-full h-full object-cover" />
+        <img src="/images/S__19972107_0.jpg" alt="Image 1" className="w-full h-full object-cover" />
       </div>
       {/* Image 6 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972108_0.JPG" alt="Image 2" className="w-full h-full object-cover" />
+        <img src="/images/S__19972108_0.jpg" alt="Image 2" className="w-full h-full object-cover" />
       </div>
       {/* Image 7 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972109_0.JPG" alt="Image 3" className="w-full h-full object-cover" />
+        <img src="/images/S__19972109_0.jpg" alt="Image 3" className="w-full h-full object-cover" />
       </div>
       {/* Image 8 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/S__19972110_0.JPG" alt="Image 4" className="w-full h-full object-cover" />
+        <img src="/images/S__19972110_0.jpg" alt="Image 4" className="w-full h-full object-cover" />
       </div>
       {/* Add more images */}
       </div>
