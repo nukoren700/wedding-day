@@ -135,7 +135,7 @@ export default function HomePage() {
 
         {/* Image Section */}
       <div className="rounded-[200px] overflow-hidden shadow-lg w-72 h-96 lg:w-80 lg:h-96">
-        <img src="/images/sample-couple3.JPG" alt="benz and M" className="w-full h-full object-cover" />
+        <img src="/images/IMG_3553 copy.JPG" alt="benz and M" className="w-full h-full object-cover" />
       </div>
       </section>
       <section className="text-center py-10 mt-16">
@@ -152,33 +152,28 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row items-center justify-between gap-20 mt-10 px-4">
-        <div className="flex flex-col lg:flex-row items-center justify-between w-full">
-        {/* Text Section - Left */}
-        <div className="text-center lg:text-right lg:pl-30 flex-1">
-          <h3 className="text-3xl lg:text-4xl font-bold text-rose-500 font-darleston">Benz</h3>
-          <p className="text-2xl lg:text-3xl text-yellow-900 font-darleston mt-2">Ketmanee Manuson</p>
-          <p className="text-sm lg:text-lg text-yellow-700 mt-1 font-darleston">นางสาวเก็จมณี มานุสนธ์</p>
-        </div>
+      <section className="min-h-screen flex items-center justify-center px-4">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-20 w-full max-w-7xl">
+            {/* Text Section - Left */}
+            <div className="text-center lg:text-right lg:pl-10 flex-1">
+              <h3 className="text-3xl lg:text-4xl font-bold text-rose-500 font-darleston">Benz</h3>
+              <p className="text-2xl lg:text-3xl text-yellow-900 font-darleston mt-2">Ketmanee Manuson</p>
+              <p className="text-sm lg:text-lg text-yellow-700 mt-1 font-darleston">นางสาวเก็จมณี มานุสนธ์</p>
+            </div>
 
-        {/* Image Section - Center */}
-        <div className="rounded-full overflow-hidden shadow-lg w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] mx-10 lg:mx-0 flex-shrink-0 lg:mx-20">
-          <img src="/images/sample-couple.jpg" alt="benz and M" className="w-full h-full object-cover" />
-        </div>
+            {/* Image Section - Center */}
+            <div className="rounded-[200px] overflow-hidden shadow-lg w-72 h-[500px] lg:w-80 lg:h-[600px]">
+              <img src="/images/IMG_3606.jpg" alt="benz and M" className="w-full h-full object-cover" />
+            </div>
 
-        {/* Text Section - Right */}
-        <div className="text-center lg:text-right lg:pl-30 flex-1">
-          <h3 className="text-3xl lg:text-4xl font-bold text-rose-500 font-darleston">M</h3>
-          <p className="text-2xl lg:text-3xl text-yellow-900 font-darleston mt-2">Nattapon Khansri</p>
-          <p className="text-sm lg:text-lg text-yellow-700 mt-1 font-darleston">นายณัฐพล คานศรี</p>
-        </div>
-
-        {/* Image Section - Center */}
-        <div className="rounded-full overflow-hidden shadow-lg w-[250px] h-[250px] lg:w-[300px] lg:h-[300px] mx-10 lg:mx-0 flex-shrink-0 lg:mx-20">
-          <img src="/images/sample-couple2.jpg" alt="benz and M" className="w-full h-full object-cover" />
-        </div>
-         </div>
-      </section>
+            {/* Text Section - Right */}
+            <div className="text-center lg:text-left lg:pr-10 flex-1">
+              <h3 className="text-3xl lg:text-4xl font-bold text-rose-500 font-darleston">M</h3>
+              <p className="text-2xl lg:text-3xl text-yellow-900 font-darleston mt-2">Nattapon Khansri</p>
+              <p className="text-sm lg:text-lg text-yellow-700 mt-1 font-darleston">นายณัฐพล คานศรี</p>
+            </div>
+          </div>
+        </section>
       <section className="text-center py-10 mt-16 px-4">
           <h2 className="text-4xl lg:text-6xl font-semibold text-rose-400 font-darleston mb-4"> Wedding Schedule </h2>
           <p className="text-xl lg:text-2xl text-yellow-900 font-semibold mb-6 pt-10"> กำหนดพิธีการ </p>
@@ -208,19 +203,35 @@ export default function HomePage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {/* Image 1 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/photo1.JPG" alt="Image 1" className="w-full h-full object-cover" />
+        <img src="/images/S__19972102_0.JPG" alt="Image 1" className="w-full h-full object-cover" />
       </div>
       {/* Image 2 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/photo2.JPG" alt="Image 2" className="w-full h-full object-cover" />
+        <img src="/images/S__19972104_0.JPG" alt="Image 2" className="w-full h-full object-cover" />
       </div>
       {/* Image 3 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/photo3.JPG" alt="Image 3" className="w-full h-full object-cover" />
+        <img src="/images/S__19972105_0.JPG" alt="Image 3" className="w-full h-full object-cover" />
       </div>
       {/* Image 4 */}
       <div className="relative overflow-hidden rounded-lg shadow-md">
-        <img src="/images/photo4.JPG" alt="Image 4" className="w-full h-full object-cover" />
+        <img src="/images/S__19972106_0.JPG" alt="Image 4" className="w-full h-full object-cover" />
+      </div>
+            {/* Image 5 */}
+            <div className="relative overflow-hidden rounded-lg shadow-md">
+        <img src="/images/S__19972107_0.JPG" alt="Image 1" className="w-full h-full object-cover" />
+      </div>
+      {/* Image 6 */}
+      <div className="relative overflow-hidden rounded-lg shadow-md">
+        <img src="/images/S__19972108_0.JPG" alt="Image 2" className="w-full h-full object-cover" />
+      </div>
+      {/* Image 7 */}
+      <div className="relative overflow-hidden rounded-lg shadow-md">
+        <img src="/images/S__19972109_0.JPG" alt="Image 3" className="w-full h-full object-cover" />
+      </div>
+      {/* Image 8 */}
+      <div className="relative overflow-hidden rounded-lg shadow-md">
+        <img src="/images/S__19972110_0.JPG" alt="Image 4" className="w-full h-full object-cover" />
       </div>
       {/* Add more images */}
       </div>
@@ -228,7 +239,7 @@ export default function HomePage() {
     <section className="mt-10 px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-semibold text-rose-400 font-darleston mb-4 pt-10 pb-10">WEDDING GIFT</h2>
           <div className="relative max-w-sm mx-auto rounded-lg shadow-lg overflow-hidden mb-6 pt-10">
-          <video src="/videos/IMG_2199.mov" className="w-full h-auto object-cover"
+          <video src="/videos/Pre (สำเนา).mov" className="w-full h-auto object-cover"
             autoPlay
             loop
             muted
@@ -246,7 +257,7 @@ export default function HomePage() {
         <h3 className="text-3xl lg:text-4xl text-rose-400 font-darleston mb-6 pt-5">#BenzM Wedding</h3>
       <div className="flex justify-center gap-4 pb-20">
         <a href="https://facebook.com" target="_blank" rel="facebook">
-        <img src="/icons/facebook.png" alt="Facebook" className="w-8 h-8" />
+        <img src="/icons/Facebook_Logo.png" alt="Facebook" className="w-8 h-8" />
         </a>
         <a href="https://instagram.com" target="_blank" rel="instagram">
         <img src="/icons/instagram.png" alt="Instagram" className="w-8 h-8" />
@@ -267,7 +278,7 @@ export default function HomePage() {
           {/* First Name */}
           <div className="md:col-span-1">
             <label htmlFor="firstName" className="block text-lg mb-2">
-              First Name
+              First Namefacebook
             </label>
             <input
               type="text"
