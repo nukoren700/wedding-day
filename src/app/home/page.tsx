@@ -76,7 +76,7 @@ export default function HomePage() {
   
         if (response.ok) {
           // setStatusMessage('Data submitted successfully!');
-          alert('ขอบคุณสำหรับคำอวยพรดีๆ ขอให้ท่ายมีความสุขดั่งคำอวยพร');
+          alert('ขอบคุณสำหรับคำอวยพรดีๆ ขอให้ท่านมีความสุขดั่งคำอวยพร');
           togglePopup();
           // setFormData({ firstName: '', lastName: '', message: '' }); // Reset form
         } else {
@@ -108,21 +108,21 @@ export default function HomePage() {
             showThumbs={false} // ซ่อนแถบ Thumbnail
             showStatus={false} // ซ่อนสถานะ (เช่น "1/3")
             >
-          <picture>
-            <source media="(max-width: 768px)" srcSet="/images/banner1-mobile.jpg" />
-            <source media="(min-width: 769px)" srcSet="/images/banner1.png" />
-            <img src="/images/banner1.jpg" alt="Banner 1" />
-          </picture>
+          {/* <picture> */}
+            {/* <source media="(max-width: 768px)" srcSet="/images/banner1-mobile.jpg" /> */}
+            {/* <source media="(min-width: 769px)" srcSet="/images/banner1.png" /> */}
+            {/* <img src="/images/banner1.jpg" alt="Banner 1" /> */}
+          {/* </picture> */}
           <picture>
             <source media="(max-width: 768px)" srcSet="/images/banner2-mobile.png" />
             <source media="(min-width: 769px)" srcSet="/images/banner2.png" />
             <img src="/images/banner2.jpg" alt="Banner 2" />
           </picture>
-          <picture>
-            <source media="(max-width: 768px)" srcSet="/images/banner3-mobile.png" />
-            <source media="(min-width: 769px)" srcSet="/images/banner3.png" />
-            <img src="/images/banner3.jpg" alt="Banner 3" />
-          </picture>
+          {/* <picture> */}
+            {/* <source media="(max-width: 768px)" srcSet="/images/banner3-mobile.png" /> */}
+            {/* <source media="(min-width: 769px)" srcSet="/images/banner3.png" /> */}
+            {/* <img src="/images/banner3.jpg" alt="Banner 3" /> */}
+          {/* </picture> */}
         </Carousel>
       </section>
       <section className="flex flex-col lg:flex-row items-center justify-center gap-40 mt-10 px-4 text-center">

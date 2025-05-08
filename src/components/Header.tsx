@@ -37,9 +37,9 @@ const Header = () => {
           <li>
             <Link href="/location">Location</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/qr-code">QR Code</Link>
-          </li>
+          </li> */}
         </nav>
 
         {/* Hamburger Menu สำหรับมือถือ */}
