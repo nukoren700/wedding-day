@@ -100,13 +100,30 @@ export default function HomePage() {
           <p className="text-1xl mt-4">We’re so delighted to have you here to share in the love and happiness of Ketmanee and Nattapon.</p>
           <p className="text-1xl mt-4">It was filled with love laughter and good memories of the two of us.</p>
         </section>
-        <section className="mt-0 items-center">
-
+        <section className="mt-0">
+          <Carousel
+            autoPlay        // เปิดใช้งานเลื่อนอัตโนมัติ
+            infiniteLoop    // วนซ้ำเมื่อถึงภาพสุดท้าย
+            interval={2000} // เวลาแต่ละภาพ (หน่วย: ms)
+            showThumbs={false} // ซ่อนแถบ Thumbnail
+            showStatus={false} // ซ่อนสถานะ (เช่น "1/3")
+            >
+          {/* <picture> */}
+            {/* <source media="(max-width: 768px)" srcSet="/images/banner1-mobile.jpg" /> */}
+            {/* <source media="(min-width: 769px)" srcSet="/images/banner1.png" /> */}
+            {/* <img src="/images/banner1.jpg" alt="Banner 1" /> */}
+          {/* </picture> */}
           <picture>
             <source media="(max-width: 768px)" srcSet="/images/banner2-mobile.png" />
-            {/* <source media="(min-width: 769px)" srcSet="/images/banner2.png" /> */}
-            {/* <img src="/images/banner2.jpg" alt="Banner 2" /> */}
+            <source media="(min-width: 769px)" srcSet="/images/banner2.png" />
+            <img src="/images/banner2.jpg" alt="Banner 2" />
           </picture>
+          {/* <picture> */}
+            {/* <source media="(max-width: 768px)" srcSet="/images/banner3-mobile.png" /> */}
+            {/* <source media="(min-width: 769px)" srcSet="/images/banner3.png" /> */}
+            {/* <img src="/images/banner3.jpg" alt="Banner 3" /> */}
+          {/* </picture> */}
+        </Carousel>
       </section>
       <section className="flex flex-col lg:flex-row items-center justify-center gap-40 mt-10 px-4 text-center">
         {/* Text Section */}
