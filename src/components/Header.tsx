@@ -37,9 +37,9 @@ const Header = () => {
           <li>
             <Link href="/location">Location</Link>
           </li>
-          {/* <li>
-            <Link href="/qr-code">QR Code</Link>
-          </li> */}
+          {/* <li> */}
+            {/* <Link href="/qr-code">QR Code</Link> */}
+          {/* </li> */}
         </nav>
 
         {/* Hamburger Menu สำหรับมือถือ */}
@@ -69,11 +69,11 @@ const Header = () => {
                     Location
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/qr-code" onClick={() => setMenuOpen(false)}>
                     QR Code
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           )}
