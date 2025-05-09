@@ -25,8 +25,8 @@ export async function GET() {
 export async function POST(request: Request) {
     try {
       const body = await request.json();
-      const { firstname, lastname, message } = body;
-  
+      const { firstname, lastname, message, image } = body;
+
       if (!firstname || !lastname || !message) {
         return NextResponse.json(
           { error: 'Please provide firstname, lastname, and message.' },
@@ -34,8 +34,8 @@ export async function POST(request: Request) {
         );
       }
   
-      const query = 'INSERT INTO messages (firstname, lastname, message) VALUES (?, ?, ?)';
-      const values = [firstname, lastname, message];
+      const query = 'INSERT INTO messages (firstname, lastname, message, image) VALUES (?, ?, ?, ?)';
+      const values = [firstname, lastname, message, image];
   
       // ระบุชนิดของผลลัพธ์เป็น ResultSetHeader
       const [result] = await pool.execute<ResultSetHeader>(query, values);
