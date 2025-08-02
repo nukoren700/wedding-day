@@ -129,11 +129,11 @@ export default function HomePage() {
                 Your browser does not support the audio element.
             </audio>
             <section className="bg-pink p-10 text-white text-center rounded-md">
-                <h1 className="text-4xl font-bold font-darleston">Welcome to our wedding.</h1>
+                <h1 className="text-4xl font-bold font-darleston">เพราะความรักเติบโตในทุกๆวัน...</h1>
                 <p className="text-1xl mt-4">
-                    We’re so delighted to have you here to share in the love and happiness of Ketmanee and Nattapon.
+                    เราสองคนจึงตั้งใจจะก้าวไปสู่บทใหม่ของชีวิตและอยากให้ทุกคนได้เป็นส่วนหนึ่งของความทรงจำอันสวยงามนี้ด้วยกัน
                 </p>
-                <p className="text-1xl mt-4">It was filled with love laughter and good memories of the two of us.</p>
+                <p className="text-1xl mt-4">Together, we are embarking on a new chapter of our lives, and we sincerely wish for you to be part of this beautiful and cherished moment with us.</p>
             </section>
             <section className="mt-0 items-center">
                 <picture>
@@ -147,7 +147,7 @@ export default function HomePage() {
                 <div className="text-center">
                     <h2 className="text-5xl lg:text-[80px] text-yellow-700 font-darleston mb-10">Save The Date</h2>
                     <p className="text-3xl lg:text-6xl font-semibold text-rose-400 font-darleston mb-10 ">Benz & M</p>
-                    <p className="text-3xl lg:text-6xl text-yellow-700 mt-4 font-darleston">We Are Getting Married</p>
+                    <p className="text-3xl lg:text-6xl text-yellow-700 mt-4 font-darleston">เรากำลังจะแต่งงาน</p>
                 </div>
 
                 {/* Image Section */}
@@ -160,8 +160,7 @@ export default function HomePage() {
                     Time To Celebrate
                 </h2>
                 <p className="text-xl lg:text-1xl text-yellow-700 mb-6 pb-10 font-darleston">
-                    We cordially invite you to celebrate our love and marriage as we count down to our special day
-                    together.
+                    การมีคุณในวันพิเศษของเราคือของขวัญที่มีค่าที่สุดแล้วพบกันในงานนะคะ💕
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
                     {Object.entries(timeLeft).map(([key, value]) => (
