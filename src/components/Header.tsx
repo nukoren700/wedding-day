@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-pink shadow-lg" : "bg-pink shadow-lg"
+        isScrolled ? "bg-rose-400/70 shadow-lg" : "bg-rose-400/70 shadow-lg"
       }`}
     >
       <div className="container mx-auto flex justify-between items-center p-4">

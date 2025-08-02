@@ -129,7 +129,7 @@ export default function HomePage() {
                 <source src="/audio/ToTheMoon.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
             </audio>
-            <section className="bg-pink p-10 text-white text-center rounded-md">
+            <section className=" bg-rose-400/70 p-10 text-white text-center rounded-md">
                 <h1 className="text-4xl font-bold ">เพราะความรักเติบโตในทุกๆวัน...</h1>
                 <p className="text-1xl mt-4">
                     เราสองคนจึงตั้งใจจะก้าวไปสู่บทใหม่ของชีวิตและอยากให้ทุกคนได้เป็นส่วนหนึ่งของความทรงจำอันสวยงามนี้ด้วยกัน
@@ -146,7 +146,7 @@ export default function HomePage() {
             <section className="flex flex-col lg:flex-row items-center justify-center gap-40 mt-10 px-4 text-center">
                 {/* Text Section */}
                 <div className="text-center">
-                    <h2 className="text-5xl lg:text-[80px] text-yellow-700 font-darleston mb-10">Save The Date</h2>
+                    <h2 className="text-5xl lg:text-[80px] text-yellow-700 mb-10">Save The Date</h2>
                     <p className="text-3xl lg:text-6xl font-semibold text-rose-400 font-darleston mb-10 ">Benz & M</p>
                     <p className="text-3xl lg:text-6xl text-yellow-700 mt-4">เรากำลังจะแต่งงาน</p>
                 </div>
@@ -170,11 +170,11 @@ export default function HomePage() {
                 <p className="text-xl lg:text-1xl text-yellow-700 mb-6 pb-10">
                     การมีคุณในวันพิเศษของเราคือของขวัญที่มีค่าที่สุดแล้วพบกันในงานนะคะ💕
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10 ">
                     {Object.entries(timeLeft).map(([key, value]) => (
                         <div
                             key={key}
-                            className="flex flex-col items-center bg-rose-100 text-yellow-700 font-darleston rounded-lg shadow-lg px-6 py-4"
+                            className="flex flex-col items-center bg-rose-400/70 text-yellow-700 font-darleston rounded-lg shadow-lg px-6 py-4"
                         >
                             <span className="text-3xl lg:text-5xl font-bold">{value}</span>
                             <span className="text-sm lg:text-lg capitalize mt-2 text-yellow-700">{key}</span>
@@ -353,8 +353,8 @@ export default function HomePage() {
                 </div>
             </section>
             <section className="mt-10 px-4 text-center">
-                <h2 className="text-3xl lg:text-4xl font-semibold text-rose-400 font-darleston mb-4 pt-10 pb-10">
-                    WEDDING GIFT
+                <h2 className="text-3xl lg:text-4xl font-semibold text-rose-400 mb-4 pt-10 pb-10">
+                    PREWEDDING
                 </h2>
                 <div className="relative max-w-sm mx-auto rounded-lg shadow-lg overflow-hidden mb-6 pt-10">
                     <video
@@ -370,7 +370,7 @@ export default function HomePage() {
                     ร่วมแสดงความยินดีและส่งมอบของขวัญให้คู่บ่าวสาว เนื่องในโอกาสพิเศษ
                 </p>
                 <button
-                    className="bg-pink text-white px-6 py-2 rounded-lg text-lg font-medium hover:bg-white hover:text-pink mb-6"
+                    className="bg-rose-400/70 text-white px-6 py-2 rounded-lg text-lg font-medium hover:bg-white hover:text-pink mb-6"
                     onClick={togglePopup}
                 >
                     {" "}
@@ -383,7 +383,7 @@ export default function HomePage() {
                 <p className="text-lg lg:text-xl text-yellow-700 mb-10">
                     อย่าลืมแบ่งปันความทรงจำดี ๆ ในวันสำคัญของเรา ด้วยการติดแฮชแท็ก
                 </p>
-                <h3 className="text-3xl lg:text-4xl text-rose-400 font-darleston mb-6 pt-5">#BenzM Wedding</h3>
+                <h3 className="text-3xl lg:text-4xl text-rose-400 mb-6 pt-5">#BMWeddingDay</h3>
                 <div className="flex justify-center gap-4 pb-20">
                     <a href="https://facebook.com" target="_blank" rel="facebook">
                     <Image
@@ -477,7 +477,16 @@ export default function HomePage() {
                                 {/* Upload image */}
                                 <div className="md:col-span-2">
                                     <label htmlFor="message" className="block text-lg mb-2">
-                                        <p className="mb-0">อัพโหลดภาพ</p>
+                                        <p className="mb-0">WEDDING GIFT</p>
+                                        <Image
+                                            src="/images/S__14131223.jpg"
+                                            alt="Image 6"
+                                            width={320}
+                                            height={500}
+                                            className="w-full h-full object-cover pt-5"
+                                            priority
+                                        />
+                                        <p className="mb-0 pt-5">อัพโหลดภาพ</p>
                                     </label>
                                     <input
                                         ref={inputFileRef}
@@ -508,7 +517,7 @@ export default function HomePage() {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="bg-pink text-white text-lg font-bold py-3 px-6 min-w-40 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed rounded-full shadow-lg hover:bg-white hover:text-pink focus:ring-2 focus:ring-green-500 focus:outline-none transform transition duration-300 hover:scale-105 flex flex-row gap-2 items-center justify-center"
+                                        className="bg-rose-400/70 text-white text-lg font-bold py-3 px-6 min-w-40 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed rounded-full shadow-lg hover:bg-white hover:text-pink focus:ring-2 focus:ring-green-500 focus:outline-none transform transition duration-300 hover:scale-105 flex flex-row gap-2 items-center justify-center"
                                     >
                                         {isSubmitting && (
                                             <svg
