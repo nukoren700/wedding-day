@@ -14,15 +14,14 @@
 
 import mysql from 'mysql2/promise';
 
-// กำหนดค่าการเชื่อมต่อฐานข้อมูล
 const pool = mysql.createPool({
-  host: process.env.DB_HOST, // เช่น xxx.tidbcloud.com
-  port: 4000, // Default port ของ TiDB
+  host: process.env.DB_HOST,
+  port: 4000, 
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
   ssl: {
-    rejectUnauthorized: true, // ใช้ SSL สำหรับการเชื่อมต่อ
+    rejectUnauthorized: true,
   },
   waitForConnections: true,
   connectionLimit: 10,

@@ -13,16 +13,16 @@ interface RecordData {
 }
 
 export default function PC9nCVgN4KMl4DIPage() {
-    const [data, setData] = useState<RecordData[]>([]); // ระบุประเภทของ data
+    const [data, setData] = useState<RecordData[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null); // รองรับ string และ null
-    const [selectedRecord, setSelectedRecord] = useState<RecordData | null>(null); // เก็บข้อมูลสำหรับแสดงใน popup
+    const [error, setError] = useState<string | null>(null);
+    const [selectedRecord, setSelectedRecord] = useState<RecordData | null>(null);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("https://wedding-day-seven.vercel.app/api/message"); // ใส่ URL ของ API ที่คุณต้องการ
-                // const response = await fetch("http://localhost:3000/api/message"); // ใส่ URL ของ API ที่คุณต้องการ
+                const response = await fetch("https://wedding-day-seven.vercel.app/api/message");
+                // const response = await fetch("http://localhost:3000/api/message"); 
                 if (!response.ok) {
                     throw new Error("Failed to fetch data");
                 }
@@ -35,9 +35,9 @@ export default function PC9nCVgN4KMl4DIPage() {
                 }
             } catch (err) {
                 if (err instanceof Error) {
-                    setError(err.message); // เก็บข้อความของ error
+                    setError(err.message);
                 } else {
-                    setError("An unknown error occurred"); // กรณี err ไม่ใช่ Error
+                    setError("An unknown error occurred");
                 }
             } finally {
                 setLoading(false);
@@ -59,7 +59,7 @@ export default function PC9nCVgN4KMl4DIPage() {
             <div
                 className="container mx-auto p-4"
                 style={{
-                    backgroundImage: "url('/path-to-your-image.jpg')", // พื้นหลัง
+                    backgroundImage: "url('/path-to-your-image.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

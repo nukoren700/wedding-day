@@ -2,8 +2,6 @@ import { NextResponse } from 'next/server';
 import pool from '@/lib/db';
 import { ResultSetHeader } from 'mysql2';
 
-// ฟังก์ชันสำหรับจัดการ POST Request
-
 export async function GET() {
     try {
       const query = 'SELECT * FROM messages';
@@ -37,7 +35,6 @@ export async function POST(request: Request) {
       const query = 'INSERT INTO messages (firstname, lastname, message, image) VALUES (?, ?, ?, ?)';
       const values = [firstname, lastname, message, image];
   
-      // ระบุชนิดของผลลัพธ์เป็น ResultSetHeader
       const [result] = await pool.execute<ResultSetHeader>(query, values);
   
       return NextResponse.json({
@@ -46,7 +43,7 @@ export async function POST(request: Request) {
         data: { id: result.insertId, firstname, lastname, message },
       });
     } catch (error) {
-        console.error('Error saving data:', error); // แสดงรายละเอียดของ error
+        console.error('Error saving data:', error);
         return NextResponse.json(
           { error: 'An error occurred while saving data.' },
           { status: 500 }

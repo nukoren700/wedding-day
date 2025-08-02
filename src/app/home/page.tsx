@@ -91,6 +91,7 @@ export default function HomePage() {
         setIsSubmitting(true);
         try {
             const response = await fetch("https://wedding-day-seven.vercel.app/api/save-data", {
+            // const response = await fetch("http://localhost:3000/api/save-data", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -151,8 +152,15 @@ export default function HomePage() {
                 </div>
 
                 {/* Image Section */}
-                <div className="rounded-[200px] overflow-hidden shadow-lg w-72 h-96 lg:w-80 lg:h-96">
-                    <img src="/images/IMG_3553 copy.jpg" alt="benz and M" className="w-full h-full object-cover" />
+                <div className="rounded-[200px] overflow-hidden shadow-xl w-72 h-96 lg:w-80 lg:h-96">
+                    <Image
+                        src="/images/IMG_3553 copy.jpg"
+                        alt="benz and M"
+                        width={320}
+                        height={400}
+                        className="w-full h-full object-cover"
+                        priority
+                    />
                 </div>
             </section>
             <section className="text-center py-10 mt-16">
@@ -166,7 +174,7 @@ export default function HomePage() {
                     {Object.entries(timeLeft).map(([key, value]) => (
                         <div
                             key={key}
-                            className="flex flex-col items-center bg-rose-100 text-yellow-700 font-darleston rounded-lg shadow-md px-6 py-4"
+                            className="flex flex-col items-center bg-rose-100 text-yellow-700 font-darleston rounded-lg shadow-lg px-6 py-4"
                         >
                             <span className="text-3xl lg:text-5xl font-bold">{value}</span>
                             <span className="text-sm lg:text-lg capitalize mt-2 text-yellow-700">{key}</span>
@@ -184,8 +192,15 @@ export default function HomePage() {
                     </div>
 
                     {/* Image Section - Center */}
-                    <div className="rounded-[200px] overflow-hidden shadow-lg w-72 h-[500px] lg:w-80 lg:h-[600px]">
-                        <img src="/images/IMG_3606.jpg" alt="benz and M" className="w-full h-full object-cover" />
+                    <div className="rounded-[200px] overflow-hidden shadow-xl w-72 h-[500px] lg:w-80 lg:h-[600px]">
+                        <Image
+                            src="/images/IMG_3606.jpg"
+                            alt="benz and M"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover"
+                            priority
+                        />
                     </div>
 
                     {/* Text Section - Right */}
@@ -206,59 +221,135 @@ export default function HomePage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Catholic Wedding Ceremony */}
                     <div className="flex flex-col items-center">
-                        <img src="/images/pan.png" alt="Catholic Wedding Ceremony" className="w-20 h-20 mb-4" />
+                        <Image
+                            src="/images/pan.png"
+                            alt="Catholic Wedding Ceremony"
+                            width={320}
+                            height={500}
+                            className="w-20 h-20 mb-4"
+                            priority
+                        />
                         <p className="text-lg lg:text-xl font-semibold text-yellow-700"> แห่ขันหมาก </p>
                         <p className="text-lg lg:text-xl text-yellow-700">08 : 08 น.</p>
                     </div>
                     {/* Guest Registration */}
                     <div className="flex flex-col items-center">
-                        <img src="/images/ring.png" alt="Guest Registration" className="w-20 h-20 mb-4" />
+                        <Image
+                            src="/images/ring.png"
+                            alt="Guest Registration"
+                            width={320}
+                            height={500}
+                            className="w-20 h-20 mb-4"
+                            priority
+                        />
                         <p className="text-lg lg:text-xl font-semibold text-yellow-700"> บายศรีสู่ขวัญ </p>
                         <p className="text-lg lg:text-xl text-yellow-700">09 : 09 น.</p>
                     </div>
                     {/* Reception */}
                     <div className="flex flex-col items-center">
-                        <img src="/images/dinner-icon.png" alt="Reception" className="w-20 h-20 mb-4" />
+                        <Image
+                            src="/images/dinner-icon.png"
+                            alt="Reception"
+                            width={320}
+                            height={500}
+                            className="w-20 h-20 mb-4"
+                            priority
+                        />
                         <p className="text-lg lg:text-xl font-semibold text-yellow-700"> รับประทานอาหารร่วมกัน </p>
                         <p className="text-lg lg:text-xl text-yellow-700">11 : 00 น.</p>
                     </div>
                 </div>
             </section>
             <section className="mt-10 px-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
                     {/* Image 1 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972102_0.jpg" alt="Image 1" className="w-full h-full object-cover" />
+                        <div className="relative overflow-hidden rounded-lg transition-shadow hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972102_0.jpg"
+                            alt="Image 1"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 2 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972104_0.jpg" alt="Image 2" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972104_0.jpg"
+                            alt="Image 2"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 3 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972105_0.jpg" alt="Image 3" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972105_0.jpg"
+                            alt="Image 3"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 4 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972106_0.jpg" alt="Image 4" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972106_0.jpg"
+                            alt="Image 4"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 5 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972107_0.jpg" alt="Image 1" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972107_0.jpg"
+                            alt="Image 4"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 6 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972108_0.jpg" alt="Image 2" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972108_0.jpg"
+                            alt="Image 6"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 7 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972109_0.jpg" alt="Image 3" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972109_0.jpg"
+                            alt="Image 6"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
                     {/* Image 8 */}
-                    <div className="relative overflow-hidden rounded-lg shadow-md">
-                        <img src="/images/S__19972110_0.jpg" alt="Image 4" className="w-full h-full object-cover" />
+                    <div className="relative overflow-hidden rounded-lg transition-shadow  hover:shadow-xl hover:shadow-rose-400">
+                        <Image
+                            src="/images/S__19972110_0.jpg"
+                            alt="Image 6"
+                            width={320}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-105"
+                            priority
+                        />
                     </div>
-                    {/* Add more images */}
                 </div>
             </section>
             <section className="mt-10 px-4 text-center">
@@ -295,10 +386,24 @@ export default function HomePage() {
                 <h3 className="text-3xl lg:text-4xl text-rose-400 font-darleston mb-6 pt-5">#BenzM Wedding</h3>
                 <div className="flex justify-center gap-4 pb-20">
                     <a href="https://facebook.com" target="_blank" rel="facebook">
-                        <img src="/icons/Facebook_Logo.png" alt="Facebook" className="w-8 h-8" />
+                    <Image
+                            src="/icons/Facebook_Logo.png"
+                            alt="Facebook"
+                            width={320}
+                            height={500}
+                            className="w-8 h-8"
+                            priority
+                        />
                     </a>
                     <a href="https://instagram.com" target="_blank" rel="instagram">
-                        <img src="/icons/instagram.png" alt="Instagram" className="w-8 h-8" />
+                    <Image
+                            src="/icons/instagram.png"
+                            alt="Instagram"
+                            width={320}
+                            height={500}
+                            className="w-8 h-8"
+                            priority
+                        />
                     </a>
                 </div>
             </section>
@@ -324,12 +429,12 @@ export default function HomePage() {
                                 {/* First Name */}
                                 <div className="md:col-span-1">
                                     <label htmlFor="firstName" className="block text-lg mb-2">
-                                        First Name facebook
+                                        ชื่อ
                                     </label>
                                     <input
                                         type="text"
                                         id="firstName"
-                                        placeholder="Enter your first name"
+                                        placeholder="ชื่อ"
                                         value={formData.firstName}
                                         onChange={handleChange}
                                         required
@@ -340,12 +445,12 @@ export default function HomePage() {
                                 {/* Last Name */}
                                 <div>
                                     <label htmlFor="lastName" className="block text-lg mb-2">
-                                        Last Name
+                                        นามสกุล
                                     </label>
                                     <input
                                         type="text"
                                         id="lastName"
-                                        placeholder="Enter your last name"
+                                        placeholder="นามสกุล"
                                         value={formData.lastName}
                                         onChange={handleChange}
                                         required
@@ -356,11 +461,11 @@ export default function HomePage() {
                                 {/* Message */}
                                 <div className="md:col-span-2">
                                     <label htmlFor="message" className="block text-lg mb-2">
-                                        Message
+                                        คำอวยพร
                                     </label>
                                     <textarea
                                         id="message"
-                                        placeholder="Enter your message"
+                                        placeholder="ข้อความอวยพร"
                                         value={formData.message}
                                         onChange={handleChange}
                                         required
@@ -372,7 +477,7 @@ export default function HomePage() {
                                 {/* Upload image */}
                                 <div className="md:col-span-2">
                                     <label htmlFor="message" className="block text-lg mb-2">
-                                        <p className="mb-0">Upload the photo you want</p>
+                                        <p className="mb-0">อัพโหลดภาพ</p>
                                     </label>
                                     <input
                                         ref={inputFileRef}
