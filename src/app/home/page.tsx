@@ -130,7 +130,7 @@ export default function HomePage() {
                 Your browser does not support the audio element.
             </audio>
             <section className="bg-pink p-10 text-white text-center rounded-md">
-                <h1 className="text-4xl font-bold font-darleston">เพราะความรักเติบโตในทุกๆวัน...</h1>
+                <h1 className="text-4xl font-bold ">เพราะความรักเติบโตในทุกๆวัน...</h1>
                 <p className="text-1xl mt-4">
                     เราสองคนจึงตั้งใจจะก้าวไปสู่บทใหม่ของชีวิตและอยากให้ทุกคนได้เป็นส่วนหนึ่งของความทรงจำอันสวยงามนี้ด้วยกัน
                 </p>
@@ -148,7 +148,7 @@ export default function HomePage() {
                 <div className="text-center">
                     <h2 className="text-5xl lg:text-[80px] text-yellow-700 font-darleston mb-10">Save The Date</h2>
                     <p className="text-3xl lg:text-6xl font-semibold text-rose-400 font-darleston mb-10 ">Benz & M</p>
-                    <p className="text-3xl lg:text-6xl text-yellow-700 mt-4 font-darleston">เรากำลังจะแต่งงาน</p>
+                    <p className="text-3xl lg:text-6xl text-yellow-700 mt-4">เรากำลังจะแต่งงาน</p>
                 </div>
 
                 {/* Image Section */}
@@ -167,7 +167,7 @@ export default function HomePage() {
                 <h2 className="text-4xl lg:text-[80px] font-semibold text-rose-400 font-darleston mb-4 pb-10">
                     Time To Celebrate
                 </h2>
-                <p className="text-xl lg:text-1xl text-yellow-700 mb-6 pb-10 font-darleston">
+                <p className="text-xl lg:text-1xl text-yellow-700 mb-6 pb-10">
                     การมีคุณในวันพิเศษของเราคือของขวัญที่มีค่าที่สุดแล้วพบกันในงานนะคะ💕
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
@@ -188,7 +188,7 @@ export default function HomePage() {
                     <div className="text-center lg:text-right lg:pl-10 flex-1">
                         <h3 className="text-3xl lg:text-4xl font-bold text-rose-500 font-darleston">Benz</h3>
                         <p className="text-2xl lg:text-3xl text-yellow-900 font-darleston mt-2">Ketmanee Manuson</p>
-                        <p className="text-sm lg:text-lg text-yellow-700 mt-1 font-darleston">นางสาวเก็จมณี มานุสนธ์</p>
+                        <p className="text-sm lg:text-lg text-yellow-700 mt-1">นางสาวเก็จมณี มานุสนธ์</p>
                     </div>
 
                     {/* Image Section - Center */}
@@ -207,7 +207,7 @@ export default function HomePage() {
                     <div className="text-center lg:text-left lg:pr-10 flex-1">
                         <h3 className="text-3xl lg:text-4xl font-bold text-rose-500 font-darleston">M</h3>
                         <p className="text-2xl lg:text-3xl text-yellow-900 font-darleston mt-2">Nattapon Khansri</p>
-                        <p className="text-sm lg:text-lg text-yellow-700 mt-1 font-darleston">นายณัฐพล คานศรี</p>
+                        <p className="text-sm lg:text-lg text-yellow-700 mt-1">นายณัฐพล คานศรี</p>
                     </div>
                 </div>
             </section>

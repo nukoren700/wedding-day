@@ -25,6 +25,7 @@ const configs = {
             fontFamily: {
                 serif: ["Georgia", "Times New Roman", "serif"],
                 darleston: ['"Darleston"', "cursive"],
+                itim: ['"Itim"', "cursive"],
             },
             colors: {
                 pink: "#FFC0CB",
