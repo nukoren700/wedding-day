@@ -22,7 +22,7 @@ export default function PC9nCVgN4KMl4DIPage() {
         const fetchData = async () => {
             try {
                 const response = await fetch("https://wedding-day-seven.vercel.app/api/message");
-                // const response = await fetch("http://localhost:3000/api/message"); 
+                // const response = await fetch("http://localhost:3000/api/message");
                 if (!response.ok) {
                     throw new Error("Failed to fetch data");
                 }
