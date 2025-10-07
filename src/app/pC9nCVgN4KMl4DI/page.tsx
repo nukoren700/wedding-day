@@ -169,8 +169,15 @@ export default function PC9nCVgN4KMl4DIPage() {
                                 ) : null}
                                 <div>
                                     <p className="text-lg">
-                                        <strong>บันทึกเมื่อ:</strong>{" "}
-                                        {new Date(selectedRecord.created_at).toLocaleString()}
+                                    <strong>บันทึกเมื่อ:</strong>{" "}
+                                    {new Date(selectedRecord.created_at).toLocaleString('th-TH', {
+                                        year: 'numeric',
+                                        month: 'long',
+                                        day: 'numeric',
+                                        hour: '2-digit',
+                                        minute: '2-digit',
+                                        hour12: false,
+                                    })}
                                     </p>
                                 </div>
                             </div>
